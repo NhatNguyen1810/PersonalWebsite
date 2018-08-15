@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
 *{
   margin:0;
   padding:0;
@@ -18,6 +21,8 @@ html,body{
   top:50%;
   left:50%;
   transform:translate(-50%,-100%); 
+  display:flex;
+  flex-direction:column;
 }
 .information{
   position:absolute;
@@ -73,7 +78,8 @@ html,body{
 .my-profile h1{
   font-weigh:bold;
   text-align:center;
-  fint-size:35px;
+  fint-size:50px;
+  font-family:Pacifico;
 }
 .my-profile .profile-text{
   text-align:center;
@@ -121,4 +127,317 @@ html,body{
   flex-direction:column;
   align-items:center;
 }
+#Header{
+font-size:50px; text-shadow:3px 3pxblack;
+overflow:hidden; 
+color:rgba(255,255,255,0.8); 
+animation: typing-1 5s steps(500, end) infinite , blink-caret .65s step-end infinite; 
+white-space: nowrap; 
+ border-right: .15em solid white;
+ width:405px;
+ position:absolute;
+ left:50%;
+ top:100%;
+ transform:translateX(-50%); 
+ text-align:right;
+ 
+}
+.timeline{
+  width:100%;
+  height:100%;
+  margin-top:5em;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+}
+.timeline-intro{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.timeline hr{
+  width:80%;
+  margin:auto;
+}
+.timeline-info{
+  width:80%;
+  height:100%;
+  margin:auto;
+  margin-top:3em;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+.timeline-info-item{
+  display:flex;
+  flex-direction:column;
+  width:30%;
+  border-radius:15px;
+  margin-right:.5em; 
+  margin-left:.5em;
+  margin-top:1em;
+}
+.timeline-header{
+  background-color: rgba(0,0,0,.75);
+  width:100%;
+  border-radius:15px 15px 0 0;
+  height:15.5em;
+}
+.timeline-header h1, .timeline-header h3{
+  color:white;
+  
+}
+.timeline-header h1{
+  padding-right:1em; 
+  padding-left:1em;
+  text-align:center;
+  padding-top:1em;
+}
+.timeline-header h3{
+  padding-right:1.5em; 
+  padding-left:1.5em;
+  padding-bottom:2em;
+}
+.timeline-content{
+  background-color: #eaeaea;
+  border-radius : 0 0 15px 15px;
+  height:6.5em;
+}
+.timeline-content div{
+  padding:1em;
+}
+.timeline-content img{
+  width:100%;
+  height:100%;
+  border-radius : 0 0 15px 15px;
+}
+.projects{
+  width:100%;
+  height:100%;
+  margin-top:4em;
+  background-color: #bbb8b8;
+}
+.projects h1{
+  text-align:center;
+  font-weight:bold;
+  font-size:60px;
+  font-family:Pacifico;
+ 
+}
+.projects hr{
+  width:0;
+  margin:auto;
+  transition:.8s;
+  opacity:0;
+}
+.projects-info{
+  width:80%;
+  height:100%;
+  margin:auto;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+.project-info-1{
+  width:45%;
+  background-image:url("https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/s2048x2048/39058007_911617019030115_3244682758009651200_n.png?_nc_cat=0&oh=648df894d26dd7261595ab15c0640865&oe=5BF72108"); 
+  background-size:cover;
+  background-position:center;
+  color:white;
+  height:14em; 
+  border-radius:15px;
+  margin-top:1em;
+  position:relative;
+  margin-right:.5em;
+  margin-left:.5em;
+}
+.project-info-1:nth-child(2){
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/CaroVN.jpg/220px-CaroVN.jpg") !important;
+}
+.project-cover{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color:rgba(0,0,0,.4);    
+  border-radius:15px;
+  opacity:0;
+  transition:0.4s;
+}
+.project-content{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.project-info-1 h3,.projects-info hr,.project-info-1 h4{
+  padding-left:10%;
+  padding-right:10%;
+}
+.project-info-1 h3{
+  padding-top:1em;
+  opacity:0;
+  transition:.6s;
+}
+.project-info-1 h4{
+  padding-top:1em;
+  transform:translateX(-100%); 
+  opacity:0;
+  transition:.6s;
+}
+.project-info-1:hover .project-content hr{
+  width:80%;
+  opacity:1;
+}
+.project-info-1:hover .project-content h4{
+  opacity:1;
+  transform:translateX(0);
+}
+.project-info-1:hover .project-content h3{
+  opacity:1;
+}
+.project-info-1:hover .project-cover{
+  opacity:1;
+}
+.skills{
+  margin-top:3em;
+  width:100%;
+  height:100%;
+  background-color: #bbb8b8; 
+}
+.skills h1{
+  font-size:50px;
+  font-family:Pacifico;
+  text-align:center;
+}
+.skills hr{
+  width:80%;
+  text-align:center;
+  margin:auto;
+}
+.skill-info{
+  width:80%;
+  margin:auto;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+}
+.skill-info-1{
+  width:50%;
+  border-right:2px solid black;
+  border-bottom:2px solid black;
+}
+.skill-info-1 p{
+  font-family:Pacifico;
+  font-size:30px;
+  text-align:center;
+}
+.skill-info-1 ul{
+  list-style-type:disc;
+  padding-left:1em;
+}
+.skill-info-2{
+  width:50%;
+  
+  border-bottom:2px solid black;
+}
+.skill-info-2 p{
+  font-family:Pacifico;
+  font-size:30px;
+  text-align:center;
+}
+.skill-info-2 ul{
+  list-style-type:disc;
+  padding-left:1.3em;
+}
 
+
+
+
+ @keyframes typing-1 {
+   
+   
+  0% { width: 0 }
+   50%{width:325px}
+   60%{
+     width:325px;
+   }
+   70%{
+     width:325px;
+   }
+   80%{
+     width:325px;
+   }
+   90%{
+     width:325px;
+   }
+   100%{width:0}
+   
+   
+   }
+@keyframes typing-2 {
+   
+   
+  0% { width: 0 }
+   50%{width:280px}
+   60%{
+     width:280px;
+   }
+   70%{
+     width:280px;
+   }
+   80%{
+     width:280px;
+   }
+   85%{
+     width:280px;
+   }
+   100%{width:0}
+   
+   
+   }
+
+
+
+
+
+
+
+
+
+@keyframes blink-caret {
+from, to { border-color: white }
+ 50% { border-color: transparent; }
+}
+
+
+@media (max-width:860px){
+  .menu{
+    width:80%;
+  }
+}
+@media (max-width:600px){
+  .menu ul li{
+    font-size:12px;
+    padding-top:1.25em;
+  }
+}
+@media (max-width:440px){
+  .menu ul li{
+    font-size:8px;
+    padding-top:2.2em;
+  }
+}
+
+@media (max-width:380px){
+  .information i{
+    font-size:25px;
+  }
+  .text h1{
+    font-size:30px;
+  }
+}
