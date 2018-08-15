@@ -1,7 +1,8 @@
+// ParticlesJS Config.
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 90,
+      "value": 120,
       "density": {
         "enable": true,
         "value_area": 700
@@ -103,3 +104,20 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+var head = document.getElementById('Header'); 
+var text1 = "I am Minh Nhat"; 
+var text2 = "A CS Student"; 
+var k = 0 ; 
+function change(){
+  if(k%2 == 0 ){
+    head.innerHTML = text1 ; 
+   head.style.cssText ="animation: typing-1 5s steps(200, end) infinite , blink-caret .65s step-end infinite ; "
+   
+  }
+  else {
+    head.innerHTML = text2; 
+    head.style.cssText ="animation: typing-2 5s steps(200, end) infinite , blink-caret .65s step-end infinite ; "
+  } k++; 
+}
+
+setInterval(change,5000); 
