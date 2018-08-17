@@ -9,6 +9,10 @@
 html,body{
   min-width:35%;
 }
+.container{
+  width:100%;
+  height:100%;
+}
 #particles-js {
   position: absolute;
   width: 100%;
@@ -420,6 +424,33 @@ from, to { border-color: white }
     width:80%;
   }
 }
+@media (max-width:750px){
+  .timeline-header h1{
+    font-size:30px;
+  }
+  .timeline-header h3{
+    font-size:16px;
+  }
+}
+@media (max-width:605px){
+  .timeline-info{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+  }
+  .timeline-info-item{
+    width:50%;
+  }
+  .profile-info ul{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+  }
+}
 @media (max-width:600px){
   .menu ul li{
     font-size:12px;
@@ -441,3 +472,4 @@ from, to { border-color: white }
     font-size:30px;
   }
 }
+
