@@ -1,4 +1,4 @@
-
+// ParticlesJS Config.
 particlesJS("particles-js", {
   "particles": {
     "number": {
@@ -121,3 +121,38 @@ function change(){
 }
 
 setInterval(change,5000); 
+
+var myprofile = document.getElementById("myprofile"); 
+var myskills = document.getElementById("myskills"); 
+var timeline = document.getElementById("timeline"); 
+var projects = document.getElementById("projects"); 
+console.log(myskills.offsetTop); 
+document.addEventListener("DOMContentLoaded",function(){
+  myprofile.onclick = function(){
+       
+     window.scrollTo({
+       top:500,
+       behavior:'smooth'
+     });
+  };
+  myskills.onclick = function(){
+    window.scrollTo({
+      top:800,
+      behavior:'smooth'
+    });
+  };
+  timeline.onclick = function(){
+    window.scrollTo({
+      top:1200,
+      behavior:'smooth'
+    });
+  };
+  projects.onclick = function(){
+    window.scrollTo({
+      top:1800,
+      behavior:'smooth'
+    });
+  };
+  
+  
+});
