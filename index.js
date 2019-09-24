@@ -122,8 +122,8 @@ function change(){
 
 setInterval(change,5000); 
 
-var myprofile = document.getElementById("myprofile"); 
-var myskills = document.getElementById("myskills"); 
+var myprofile = document.getElementById("my-profile"); 
+var myskills = document.getElementById("skills"); 
 var timeline = document.getElementById("timeline"); 
 var projects = document.getElementById("projects"); 
 console.log(myskills.offsetTop); 
