@@ -208,6 +208,12 @@ white-space: nowrap;
   background-color: #eaeaea;
   border-radius : 0 0 15px 15px;
   height:6.5em;
+  width:100%;
+  height:150px;
+}
+.timeline-content img{
+  width:100%;
+  height:100%;
 }
 .timeline-content div{
   padding:1em;
@@ -246,7 +252,7 @@ white-space: nowrap;
 }
 .project-info-1{
   width:45%;
-  background-image:url("https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/s2048x2048/39058007_911617019030115_3244682758009651200_n.png?_nc_cat=0&oh=648df894d26dd7261595ab15c0640865&oe=5BF72108"); 
+  background-image:url("image/mysite.png"); 
   background-size:cover;
   background-position:center;
   color:white;
