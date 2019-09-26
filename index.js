@@ -1,109 +1,106 @@
-// ParticlesJS Config.
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 120,
-      "density": {
-        "enable": true,
-        "value_area": 700
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
+
+var cdongTimeLine = anime.timeline(); 
+
+
+
+
+cdongTimeLine.add({
+  targets:'.path1',
+  strokeDashoffset:{
+    value:0,
+    duration:3000,
+    easing:'easeOutSine'
   },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "repulse"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 140,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 150,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
+  loop:true
+  
+  
+  
+ })
+
+
+cdongTimeLine.add({
+  targets:'.path2',
+  strokeDashoffset:{
+    value:0,
+    duration:3000,
+    easing:'easeOutSine'
   },
-  "retina_detect": true
-});
+  loop:true,
+  offset:"-=2000ms"
+  
+})
+
+
+cdongTimeLine.add({
+  targets:'.path3',
+  strokeDashoffset:{
+    value:0,
+    duration:3000,
+    easing:'easeOutSine'
+  },
+  loop:true,
+  offset:"-=2000ms"
+  
+  
+})
+
+cdongTimeLine.add({
+  targets:'.path1',
+  strokeDashoffset:{
+    value:0,
+    duration:3000,
+    easing:'easeOutSine'
+  },
+  loop:true,
+  offset:"-=2000ms"
+  
+  
+})
+cdongTimeLine.add({
+  targets:'.path4',
+  strokeDashoffset:{
+    value:0,
+    duration:2000,
+    easing:'easeOutSine'
+  },
+  loop:true,
+  offset:"-=2000ms"
+  
+  
+})
+cdongTimeLine.add({
+  targets:'.path5',
+  strokeDashoffset:{
+    value:0,
+    duration:3000,
+    easing:'easeOutSine'
+  },
+  loop:true,
+  offset:"-=2000ms"
+  
+  
+
+})
+
+
+
+
+
+cdongTimeLine.add({
+  targets:'.path6',
+  strokeDashoffset:{
+    value:0,
+    duration:3000,
+    easing:'easeOutSine'
+  },
+  loop:true,
+  offset:"-=2000ms"
+  
+  
+})
+
+
+
 var head = document.getElementById('Header'); 
 var text1 = "I am Minh Nhat"; 
 var text2 = "A CS Student"; 
@@ -159,112 +156,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
 
 
-var cdongTimeLine = anime.timeline(); 
 
 
 
-// var cdoing = anime({
-// 	targets:'.ve1 path', 
-// 	strokeDashoffset:{
-// 		value:0,
-// 		duration:4000,
-// 		easing:'easeOutSine'
-// 	},
-// 	loop:true
-	
-// })
-cdongTimeLine.add({
-	targets:'.path1',
-	strokeDashoffset:{
-		value:0,
-		duration:3000,
-		easing:'easeOutSine'
-	},
-	loop:true
-	
-	
-	
- })
-
-
-cdongTimeLine.add({
-	targets:'.path2',
-	strokeDashoffset:{
-		value:0,
-		duration:3000,
-		easing:'easeOutSine'
-	},
-	loop:true,
-	offset:"-=2000ms"
-	
-})
-
-
-cdongTimeLine.add({
-	targets:'.path3',
-	strokeDashoffset:{
-		value:0,
-		duration:3000,
-		easing:'easeOutSine'
-	},
-	loop:true,
-	offset:"-=2000ms"
-	
-	
-})
-
-cdongTimeLine.add({
-	targets:'.path1',
-	strokeDashoffset:{
-		value:0,
-		duration:3000,
-		easing:'easeOutSine'
-	},
-	loop:true,
-	offset:"-=2000ms"
-	
-	
-})
-cdongTimeLine.add({
-	targets:'.path4',
-	strokeDashoffset:{
-		value:0,
-		duration:2000,
-		easing:'easeOutSine'
-	},
-	loop:true,
-	offset:"-=2000ms"
-	
-	
-})
-cdongTimeLine.add({
-	targets:'.path5',
-	strokeDashoffset:{
-		value:0,
-		duration:3000,
-		easing:'easeOutSine'
-	},
-	loop:true,
-	offset:"-=2000ms"
-	
-	
-
-})
-
-
-
-
-
-cdongTimeLine.add({
-	targets:'.path6',
-	strokeDashoffset:{
-		value:0,
-		duration:3000,
-		easing:'easeOutSine'
-	},
-	loop:true,
-	offset:"-=2000ms"
-	
-	
-})
 
