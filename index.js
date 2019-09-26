@@ -156,3 +156,115 @@ document.addEventListener("DOMContentLoaded",function(){
   
   
 });
+
+
+
+var cdongTimeLine = anime.timeline(); 
+
+
+
+// var cdoing = anime({
+// 	targets:'.ve1 path', 
+// 	strokeDashoffset:{
+// 		value:0,
+// 		duration:4000,
+// 		easing:'easeOutSine'
+// 	},
+// 	loop:true
+	
+// })
+cdongTimeLine.add({
+	targets:'.path1',
+	strokeDashoffset:{
+		value:0,
+		duration:3000,
+		easing:'easeOutSine'
+	},
+	loop:true
+	
+	
+	
+ })
+
+
+cdongTimeLine.add({
+	targets:'.path2',
+	strokeDashoffset:{
+		value:0,
+		duration:3000,
+		easing:'easeOutSine'
+	},
+	loop:true,
+	offset:"-=2000ms"
+	
+})
+
+
+cdongTimeLine.add({
+	targets:'.path3',
+	strokeDashoffset:{
+		value:0,
+		duration:3000,
+		easing:'easeOutSine'
+	},
+	loop:true,
+	offset:"-=2000ms"
+	
+	
+})
+
+cdongTimeLine.add({
+	targets:'.path1',
+	strokeDashoffset:{
+		value:0,
+		duration:3000,
+		easing:'easeOutSine'
+	},
+	loop:true,
+	offset:"-=2000ms"
+	
+	
+})
+cdongTimeLine.add({
+	targets:'.path4',
+	strokeDashoffset:{
+		value:0,
+		duration:2000,
+		easing:'easeOutSine'
+	},
+	loop:true,
+	offset:"-=2000ms"
+	
+	
+})
+cdongTimeLine.add({
+	targets:'.path5',
+	strokeDashoffset:{
+		value:0,
+		duration:3000,
+		easing:'easeOutSine'
+	},
+	loop:true,
+	offset:"-=2000ms"
+	
+	
+
+})
+
+
+
+
+
+cdongTimeLine.add({
+	targets:'.path6',
+	strokeDashoffset:{
+		value:0,
+		duration:3000,
+		easing:'easeOutSine'
+	},
+	loop:true,
+	offset:"-=2000ms"
+	
+	
+})
+
