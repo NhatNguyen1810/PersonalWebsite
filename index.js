@@ -1,4 +1,6 @@
 
+
+
 var cdongTimeLine = anime.timeline(); 
 
 
@@ -11,6 +13,7 @@ cdongTimeLine.add({
     duration:3000,
     easing:'easeOutSine'
   },
+  direction: 'reverse',
   loop:true
   
   
@@ -25,6 +28,7 @@ cdongTimeLine.add({
     duration:3000,
     easing:'easeOutSine'
   },
+  direction: 'reverse',
   loop:true,
   offset:"-=2000ms"
   
@@ -38,6 +42,7 @@ cdongTimeLine.add({
     duration:3000,
     easing:'easeOutSine'
   },
+  direction: 'reverse',
   loop:true,
   offset:"-=2000ms"
   
@@ -51,6 +56,7 @@ cdongTimeLine.add({
     duration:3000,
     easing:'easeOutSine'
   },
+  direction: 'reverse',
   loop:true,
   offset:"-=2000ms"
   
@@ -63,6 +69,7 @@ cdongTimeLine.add({
     duration:2000,
     easing:'easeOutSine'
   },
+  direction: 'reverse',
   loop:true,
   offset:"-=2000ms"
   
@@ -75,6 +82,7 @@ cdongTimeLine.add({
     duration:3000,
     easing:'easeOutSine'
   },
+  direction: 'reverse',
   loop:true,
   offset:"-=2000ms"
   
@@ -101,6 +109,7 @@ cdongTimeLine.add({
 
 
 
+
 var head = document.getElementById('Header'); 
 var text1 = "I am Minh Nhat"; 
 var text2 = "A CS Student"; 
@@ -122,10 +131,40 @@ setInterval(change,5000);
 var myprofile = document.getElementById("my-profile"); 
 var myskills = document.getElementById("skills"); 
 var timeline = document.getElementById("timeline"); 
-var projects = document.getElementById("projects"); 
-console.log(myskills.offsetTop); 
+
+ 
+
+
 document.addEventListener("DOMContentLoaded",function(){
+
+
+  var tipButton = document.querySelectorAll('.tiphack-nutslide ul li'); 
+  var tipSlide = document.querySelectorAll('.tiphack-item');
+      
+  
+    for(var i = 0 ; i < tipButton.length ; i++){
+      tipButton[i].addEventListener('click',function(){
+        for(var j = 0 ; j < tipButton.length ; j++){
+          tipButton[j].classList.remove('tip-active');
+        }
+        this.classList.add('tip-active');
+         var currentTip = this ; 
+         var tipNumber = 0 ; 
+       
+        for(tipNumber = 0 ; currentTip = currentTip.previousElementSibling ; tipNumber ++){}
+        
+        for(var n = 0 ; n < tipButton.length ; n++){
+          tipSlide[n].style.cssText ="transform:translateX(" + (-tipNumber) + "00%)" ;
+        }
+      });
+     
+    }
+
+
   myprofile.onclick = function(){
+
+
+   
        
      window.scrollTo({
        top:500,
