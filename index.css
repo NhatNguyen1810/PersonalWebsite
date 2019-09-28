@@ -130,7 +130,7 @@ html,body{
 }
 .info-2{
   width:33.33%;
-  height:100%;
+  height:auto;
   text-align:center;
 }
 .info-2 img{
@@ -150,7 +150,7 @@ html,body{
   align-items:center;
 }
 #Header{
-font-size:50px; text-shadow:3px 3pxblack;
+font-size:50px; text-shadow:3px 3px black;
 overflow:hidden; 
 color:rgba(255,255,255,0.8); 
 animation: typing-1 5s steps(500, end) infinite , blink-caret .65s step-end infinite; 
@@ -252,57 +252,7 @@ white-space: nowrap;
 
 
 
-.container{
-  position:relative;
-}
 
-.carousel{
-  width:80%;
-  height:auto; 
-  border: 5px solid black ; 
-  margin: 0 auto ; 
-  overflow:hidden;
-}
-.carousel ul{
-  list-style-type:none;
-  margin:0;
-  padding:0;
-  width:100%;
-  font-size:0;
-  white-space:nowrap;
-  transition:0.8s ease-in;
-}
-.carousel li{
-  display:inline-block;
-  width:100%;
-  margin:0;
-  position:relative;
-  padding-bottom:66.66%;
-  overflow:hidden;
-}
-li img{
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  display: block;
-}
-.nut{
-  position:absolute;
-  left:50%;
-  transform:translateX(-50%);
-  color: #eeeeee;
-  height:2em;
-  top:105%;
-  
-}
-#prev , #next{
-  width:6em;
-  height:3em;
-}
 @media screen and (max-width:700px){
   #prev , #next{
   width:4em;
@@ -339,13 +289,7 @@ li img{
 
 }
 
-.project-holder{
-  width:80%;
-  height:auto; 
-  border: 5px solid black ; 
-  margin: 0 auto ; 
-  overflow:hidden;
-}
+
 .projects h1{
   text-align:center;
   font-weight:bold;
@@ -359,25 +303,7 @@ li img{
   transition:.8s;
   opacity:0;
 }
-.project-holder ul{
-  list-style-type:none;
-  margin:0;
-  padding:0;
-  width:100%;
-  height:500px;
-  font-size:0;
-  white-space:nowrap;
-  margin-bottom:10%;
-  
 
-}
-
-.project-holder li{
-  display:inline-block;
-  width:50%;
-  height:200px;
-  margin:0;
- 
   
   
  
@@ -610,7 +536,7 @@ li img{
   
   color:white;
   transition: 0.4s;
-  border:5px solid red;
+  
 }
 
 
